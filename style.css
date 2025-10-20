@@ -35,15 +35,13 @@ body {
 .text-content {
   flex: 1 1 200px;
 }
-
-.header-image {
-  max-width: 50px;      /* limits width */
-  max-height: 50px;     /* limits height */
-  object-fit: contain;    /* keeps aspect ratio */
+.image-container {
+  text-align: center;
 }
+
 .big-image {
-  width: 150px;      /* explicit fixed width */
-  height: auto;      /* maintain aspect ratio */
-  display: block;    /* ensures it doesn’t stretch with flex */
-  margin-bottom: -30px; /* optional overlap with box */
+  width: 150px !important;      /* force width */
+  height: auto !important;      /* preserve ratio */
+  max-width: 90vw !important;   /* never wider than screen */
+  max-height: 200px !important; /* never taller than screen */
 }
