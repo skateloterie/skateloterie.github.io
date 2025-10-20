@@ -55,17 +55,21 @@ button:hover {
 }
 .flex-container {
   display: flex;
-  align-items: center; /* vertically center */
+  align-items: center;       /* vertically center */
   justify-content: space-between;
-  gap: 20px; /* space between text and image */
+  gap: 20px;                 /* space between text and image */
+  flex-wrap: wrap;           /* allow wrapping on small screens */
 }
 
 .text-content {
-  flex: 1; /* take available space */
+  flex: 1 1 60%;             /* text takes 60% of the container, can shrink */
 }
 
 .header-image {
-  max-width: 150px; /* adjust the image size */
-  height: auto;
+  max-width: 120px;          /* smaller image */
+  width: 100%;               /* responsive */
+  height: auto;              /* maintain aspect ratio */
+  flex: 1 1 30%;             /* image takes up to 30% of container */
 }
+
 
