@@ -6,7 +6,7 @@ html, body {
 
 body {
   font-family: "Arial Black", Arial, sans-serif;
-  background-color: #f5f0e1; /* světle béžová */
+  background-color: #f5f0e1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,29 +14,26 @@ body {
 
 .container {
   background: white;
-  padding: 20px;          /* reduced padding */
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  width: auto;            /* let container shrink to content */
-  max-width: 90%;         /* responsive */
+  max-width: 90%;
+  width: auto;
 }
 
 .flex-container {
   display: flex;
-  align-items: center;    /* vertically center */
-  justify-content: space-between;
-  gap: 20px;              /* space between text and image */
-  flex-wrap: wrap;        /* wrap on smaller screens */
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .text-content {
-  flex: 1 1 auto;         /* take remaining space */
-  min-width: 180px;       /* prevent text from shrinking too much */
+  flex: 1 1 200px;
 }
 
 .header-image {
-  max-width: 120px;       /* smaller width */
-  max-height: 120px;      /* limit height to avoid tall image */
-  width: auto;
-  height: auto;
+  max-width: 100px;      /* limits width */
+  max-height: 100px;     /* limits height */
+  object-fit: contain;    /* keeps aspect ratio */
 }
