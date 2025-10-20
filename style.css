@@ -37,7 +37,7 @@ body {
 }
 
 .header-image {
-  max-width: 100px;      /* limits width */
-  max-height: 100px;     /* limits height */
+  max-width: 200px;      /* limits width */
+  max-height: 200px;     /* limits height */
   object-fit: contain;    /* keeps aspect ratio */
 }
