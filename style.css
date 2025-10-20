@@ -41,3 +41,10 @@ body {
   max-height: 50px;     /* limits height */
   object-fit: contain;    /* keeps aspect ratio */
 }
+.big-image {
+  width: auto;           /* let width scale automatically */
+  max-width: 250px;      /* maximum width */
+  height: auto;          /* maintain aspect ratio */
+  max-height: 150px;     /* maximum height so it doesn't overflow screen */
+  margin-bottom: -30px;  /* optional overlap with box */
+}
