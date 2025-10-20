@@ -53,4 +53,19 @@ button:hover {
   color: green;
   font-weight: bold;
 }
+.flex-container {
+  display: flex;
+  align-items: center; /* vertically center */
+  justify-content: space-between;
+  gap: 20px; /* space between text and image */
+}
+
+.text-content {
+  flex: 1; /* take available space */
+}
+
+.header-image {
+  max-width: 150px; /* adjust the image size */
+  height: auto;
+}
 
