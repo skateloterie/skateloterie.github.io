@@ -4,7 +4,6 @@ html, body {
   margin: 0;
 }
 
-/* Základní rozvržení stránky */
 body {
   font-family: "Arial Black", Arial, sans-serif;
   background-color: #f5f0e1; /* světle béžová */
@@ -13,63 +12,31 @@ body {
   align-items: center;
 }
 
-/* Hlavní box */
 .container {
   background: white;
-  padding: 40px;
+  padding: 20px;          /* reduced padding */
   border-radius: 10px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  text-align: center;
-  width: 300px;
+  width: auto;            /* let container shrink to content */
+  max-width: 90%;         /* responsive */
 }
 
-/* Pole pro zadání emailu */
-input[type="email"] {
-  width: 80%;
-  padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* Styl tlačítka */
-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-/* Text zprávy */
-#message {
-  margin-top: 15px;
-  color: green;
-  font-weight: bold;
-}
 .flex-container {
   display: flex;
-  align-items: center;       /* vertically center */
+  align-items: center;    /* vertically center */
   justify-content: space-between;
-  gap: 20px;                 /* space between text and image */
-  flex-wrap: wrap;           /* allow wrapping on small screens */
+  gap: 20px;              /* space between text and image */
+  flex-wrap: wrap;        /* wrap on smaller screens */
 }
 
 .text-content {
-  flex: 1 1 60%;             /* text takes 60% of the container, can shrink */
+  flex: 1 1 auto;         /* take remaining space */
+  min-width: 180px;       /* prevent text from shrinking too much */
 }
 
 .header-image {
-  max-width: 120px;          /* smaller image */
-  width: 100%;               /* responsive */
-  height: auto;              /* maintain aspect ratio */
-  flex: 1 1 30%;             /* image takes up to 30% of container */
+  max-width: 120px;       /* smaller width */
+  max-height: 120px;      /* limit height to avoid tall image */
+  width: auto;
+  height: auto;
 }
-
-
