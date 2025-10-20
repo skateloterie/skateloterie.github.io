@@ -1,6 +1,8 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  /* Základní rozvržení stránky */
+body {
+  font-family: "Arial Black", Arial, sans-serif;
+  background-color: #f5f0e1; /* světle béžová */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +10,7 @@ body {
   margin: 0;
 }
 
+/* Hlavní box */
 .container {
   background: white;
   padding: 40px;
@@ -17,6 +20,7 @@ body {
   width: 300px;
 }
 
+/* Pole pro zadání emailu */
 input[type="email"] {
   width: 80%;
   padding: 10px;
@@ -25,6 +29,7 @@ input[type="email"] {
   border-radius: 5px;
 }
 
+/* Styl tlačítka */
 button {
   background-color: #007bff;
   color: white;
@@ -39,8 +44,10 @@ button:hover {
   background-color: #0056b3;
 }
 
+/* Text zprávy */
 #message {
   margin-top: 15px;
   color: green;
   font-weight: bold;
 }
+
