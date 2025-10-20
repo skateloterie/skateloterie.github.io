@@ -42,9 +42,8 @@ body {
   object-fit: contain;    /* keeps aspect ratio */
 }
 .big-image {
-  width: auto;           /* let width scale automatically */
-  max-width: 250px;      /* maximum width */
-  height: auto;          /* maintain aspect ratio */
-  max-height: 150px;     /* maximum height so it doesn't overflow screen */
-  margin-bottom: -30px;  /* optional overlap with box */
+  width: 150px;      /* explicit fixed width */
+  height: auto;      /* maintain aspect ratio */
+  display: block;    /* ensures it doesn’t stretch with flex */
+  margin-bottom: -30px; /* optional overlap with box */
 }
