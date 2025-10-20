@@ -1,13 +1,16 @@
-body {
-  /* Základní rozvržení stránky */
+/* Make the page full height and remove default margins */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Základní rozvržení stránky */
 body {
   font-family: "Arial Black", Arial, sans-serif;
   background-color: #f5f0e1; /* světle béžová */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
 }
 
 /* Hlavní box */
